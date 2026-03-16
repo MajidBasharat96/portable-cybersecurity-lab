@@ -1,32 +1,31 @@
-# portable-cybersecurity-lab
-A Portable Cybersecurity Lab is a lightweight, containerized security environment that can run from any machine without permanent installation. It includes penetration testing tools, vulnerable applications, monitoring tools, and automated lab deployment scripts.
-
 
 # Portable Cybersecurity Lab
 
-A portable, containerized cybersecurity training environment.
+A portable, containerized cybersecurity research environment designed for penetration testing,
+defensive monitoring, and AI‑driven intrusion detection.
 
 ## Features
 
-- Docker-based penetration testing lab
-- Vulnerable web applications
-- Integrated monitoring stack
-- Portable USB execution
-- Python automation
-
-## Tools Included
-
-- Metasploit
-- Nmap
-- SQLMap
-- Burp Suite
-- OWASP Juice Shop
-- DVWA
+- Docker-based vulnerable lab
+- Automated vulnerability scanner
+- Machine Learning intrusion detection
+- Threat intelligence feeds
+- Malware sandbox environment
+- Attack simulation framework
+- Web monitoring dashboard
+- USB auto-start capability
 
 ## Start Lab
 
-bash start-lab.sh
+```bash
+bash scripts/start_lab.sh
+```
 
 ## Stop Lab
 
-bash stop-lab.sh
+```bash
+bash scripts/stop_lab.sh
+```
+
+Dashboard:
+http://localhost:5000
