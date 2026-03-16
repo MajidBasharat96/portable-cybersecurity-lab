@@ -1,0 +1,52 @@
+portable-cybersecurity-lab
+│
+├── README.md
+├── LICENSE
+├── requirements.txt
+├── setup.sh
+├── start-lab.sh
+├── stop-lab.sh
+│
+├── configs
+│   ├── docker-compose.yml
+│   ├── network-config.yml
+│   └── lab-settings.json
+│
+├── automation
+│   ├── lab_manager.py
+│   ├── environment_checker.py
+│   └── usb_autostart.py
+│
+├── vulnerable-machines
+│   ├── dvwa
+│   │   └── Dockerfile
+│   ├── juice-shop
+│   │   └── Dockerfile
+│   └── insecure-api
+│       └── Dockerfile
+│
+├── monitoring
+│   ├── elastic-stack
+│   │   ├── elasticsearch.yml
+│   │   └── kibana.yml
+│   │
+│   └── suricata
+│       └── suricata.yaml
+│
+├── pentest-tools
+│   ├── nmap
+│   ├── metasploit
+│   ├── sqlmap
+│   └── burpsuite
+│
+├── datasets
+│   ├── malware_samples
+│   └── traffic_logs
+│
+├── reports
+│   └── example-attack-report.md
+│
+└── docs
+    ├── architecture.md
+    ├── lab-exercises.md
+    └── troubleshooting.md
