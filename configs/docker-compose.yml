@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+
+  dvwa:
+    image: vulnerables/web-dvwa
+    ports:
+      - "8081:80"
+
+  juice_shop:
+    image: bkimminich/juice-shop
+    ports:
+      - "3000:3000"
+
+  metasploit:
+    image: metasploitframework/metasploit-framework
+    stdin_open: true
+    tty: true
+
+  elasticsearch:
+    image: elasticsearch:7.17.0
+    environment:
+      - discovery.type=single-node
+    ports:
+      - "9200:9200"
+
+  kibana:
+    image: kibana:7.17.0
+    ports:
+      - "5601:5601"
